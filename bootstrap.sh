@@ -42,6 +42,7 @@ confirm_and_copy() {
     fi
 }
 
+mkdir -p "${HOME}/.ssh"
 confirm_and_copy "${FEATURE_DIR}/.ssh/config" "${HOME}/.ssh/config"
 confirm_and_copy "${FEATURE_DIR}/.ssh/github" "${HOME}/.ssh/github"
 confirm_and_copy "${FEATURE_DIR}/.netrc" "${HOME}/.netrc"
