@@ -51,5 +51,8 @@ confirm_and_copy "${FEATURE_DIR}/.zshrc" "${HOME}/.zshrc"
 # Install zsh
 sudo apt-get update
 sudo apt-get install -y zsh zsh-common zsh-syntax-highlighting zsh-autosuggestions
-chsh -s "$(which zsh)"
+sudo chsh -s "$(which zsh)"
 echo "Zsh installed and set as default shell."
+
+echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "${HOME}/.zshrc"
+echo "source /usr/share/zsh-common/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "${HOME}/.zshrc"
