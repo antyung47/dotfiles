@@ -48,6 +48,8 @@ confirm_and_copy "${FEATURE_DIR}/.ssh/github" "${HOME}/.ssh/github"
 confirm_and_copy "${FEATURE_DIR}/.netrc" "${HOME}/.netrc"
 confirm_and_copy "${FEATURE_DIR}/.zshrc" "${HOME}/.zshrc"
 
+sudo chmod 600 "${HOME}/.ssh/github"
+
 # Install zsh
 sudo apt-get update
 sudo apt-get install -y zsh zsh-common zsh-syntax-highlighting zsh-autosuggestions
