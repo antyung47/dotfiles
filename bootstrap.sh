@@ -47,3 +47,9 @@ confirm_and_copy "${FEATURE_DIR}/.ssh/config" "${HOME}/.ssh/config"
 confirm_and_copy "${FEATURE_DIR}/.ssh/github" "${HOME}/.ssh/github"
 confirm_and_copy "${FEATURE_DIR}/.netrc" "${HOME}/.netrc"
 confirm_and_copy "${FEATURE_DIR}/.zshrc" "${HOME}/.zshrc"
+
+# Install zsh
+sudo apt-get update
+sudo apt-get install -y zsh zsh-common zsh-syntax-highlighting zsh-autosuggestions
+chsh -s "$(which zsh)"
+echo "Zsh installed and set as default shell."
