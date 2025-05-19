@@ -55,4 +55,4 @@ sudo chsh -s "$(which zsh)"
 echo "Zsh installed and set as default shell."
 
 echo "source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> "${HOME}/.zshrc"
-echo "source /usr/share/zsh-common/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "${HOME}/.zshrc"
+echo "source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> "${HOME}/.zshrc"
