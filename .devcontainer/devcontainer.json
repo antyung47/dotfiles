@@ -1,18 +1,20 @@
 {
-  "image": "public.ecr.aws/f7i0q1v8/devcontainer/ubuntu-base:jammy",
-  "name": "dotfiles",
+  "image": "public.ecr.aws/dev1-sg/devcontainer/ubuntu-base:24.04",
+  "name": "antyung47-dotfiles",
   "features": {
       "ghcr.io/dev1-sg/devcontainers/common-utils:1": {},
       "ghcr.io/dev1-sg/devcontainers/docker-in-docker:latest": {},
-      "ghcr.io/dev1-sg/devcontainers/github-cli:1": {}
+      "ghcr.io/dev1-sg/devcontainers/aws-cli:1": {}
   },
   "customizations": {
     "vscode": {
-      "settings": {"terminal.integrated.defaultProfile.linux": "bash"},
-    "extensions": []
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {"zsh": {"path": "/usr/bin/zsh"}}
+      }
     }
   },
   "containerUser": "vscode",
-  "workspaceMount": "source=${localWorkspaceFolder}/,target=/home/vscode/dotfiles,type=bind,consistency=cached", "workspaceFolder": "/home/vscode",
+  "workspaceMount": "source=${localWorkspaceFolder}/,target=/home/vscode/antyung47-dotfiles,type=bind,consistency=cached", "workspaceFolder": "/home/vscode",
   "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode"
 }

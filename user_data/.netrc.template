@@ -1,0 +1,7 @@
+machine github.com
+login oauth2
+password ${GH_TOKEN}
+
+machine gitlab.com
+login antyung47
+password ${GL_TOKEN}

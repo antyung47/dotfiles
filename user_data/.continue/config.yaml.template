@@ -1,0 +1,19 @@
+---
+name: Continue Copilot
+version: 1.0.0
+schema: v1
+models:
+  - name: Claude 3.7 Sonnet
+    provider: bedrock
+    model: apac.anthropic.claude-3-7-sonnet-20250219-v1:0
+    env:
+      region: ap-southeast-1
+      profile: bedrock
+    roles:
+      - chat
+  - name: Codestral
+    provider: mistral
+    model: codestral-latest
+    apiKey: ${MISTRAL_API_KEY}
+    roles:
+      - autocomplete

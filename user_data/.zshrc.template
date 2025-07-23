@@ -1,0 +1,12 @@
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+
+git config --global user.email "${GH_USER_EMAIL}"
+git config --global user.name "${GH_USER_NAME}"
+
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
