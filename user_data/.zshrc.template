@@ -10,3 +10,5 @@ git config --global user.name "${GH_USER_NAME}"
 
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+eval "$(uv generate-shell-completion zsh)"
