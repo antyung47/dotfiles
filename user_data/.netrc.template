@@ -4,4 +4,4 @@ password ${GH_TOKEN}
 
 machine gitlab.com
 login antyung47
-password ${GL_TOKEN}
+password ${GITLAB_TOKEN}
