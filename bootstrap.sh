@@ -22,3 +22,5 @@ curl -fsSL https://raw.githubusercontent.com/antyung47/dotfiles/refs/heads/main/
 mkdir -p $HOME/.ssh
 curl -fsSL https://raw.githubusercontent.com/antyung47/dotfiles/refs/heads/main/user_data/.ssh/config.template \
 > $HOME/.ssh/config
+
+chsh -s $(which zsh)
