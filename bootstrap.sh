@@ -3,8 +3,8 @@
 set -exo pipefail
 
 mkdir -p $HOME/.zsh
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.zsh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $HOME/.zsh/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions.git $HOME/.zsh/zsh-autosuggestions
 
 curl -fsSL https://raw.githubusercontent.com/antyung47/dotfiles/refs/heads/main/user_data/.zshrc.template \
 | envsubst > ~/.zshrc
