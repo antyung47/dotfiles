@@ -5,7 +5,3 @@ password ${GH_TOKEN}
 machine gitlab.com
 login antyung47
 password ${GITLAB_TOKEN}
-
-machine huggingface.co
-login antyung47
-password ${HF_TOKEN}
